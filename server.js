@@ -50,6 +50,8 @@ server.get('/study', (req, res, next) => {
     }
     console.log(req);
 
+    console.log('hello');
+
     // req.query.id = 200001123
     // req.query.name = 유선호
     if(req.query.id !== null && req.query.id !== undefined){ 
