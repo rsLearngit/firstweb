@@ -52,6 +52,8 @@ server.get('/study', (req, res, next) => {
 
     console.log('hello');
 
+    console.log('BU');
+
     // req.query.id = 200001123
     // req.query.name = 유선호
     if(req.query.id !== null && req.query.id !== undefined){ 
