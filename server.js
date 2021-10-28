@@ -82,6 +82,7 @@ server.get('/cal', (req, res, next) =>{
         thirdNum : 0
     }
 
+
     if(req.query.firstNum !== null && req.query.firstNum !== undefined){
         Nums.firstNum = Number(req.query.firstNum);
     }
@@ -108,6 +109,9 @@ server.get('/99dan',  (req, res, next) => {
         primary : 2,
         length : 15
     }
+
+    console.log('구구단입니다.')
+
 
     if(req.query.primary !== null && req.query.primary !== undefined){
         gugudan.primary = req.query.primary;
